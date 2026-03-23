@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #e5e7eb;
+        margin: 0;
+    }
+    /* NavBar Control */
+    .CtrlNavBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Nav_logo{
+        display: flex;
+        align-items: center;
+    }
+    .Logo{
+        background-color: #4f8df7;
+        color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        padding: 10px;
+    }
+    .CtrlA{
+        font-size: larger;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    /* Card */
+    .Container{
+        background-color: white;
+        width: 90%;
+        margin: 40px auto;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    p{
+        color: #666;
+    }
+    label{
+        color: #666;
+    }
+    input{
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: large;
+    }
+    /* .Ctrlbtn{
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .Ctrlnav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .myS {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Ctrla {
+        font-size: medium;
+        padding-right: 5px;
+    }
+
+    /* Form */
+    form {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .txtforgotpw {
+        font-size: large;
+    }
+
+    .txtenter {
+        font-size: medium;
+    }
+
+    legend {
+        padding-left: 10px;
+    }
+
+    /* Input */
+    .inpstu {
+        width: 100%;
+        padding: 15px;
+        font-size: medium;
+    }
+
+    /* Buttons (stack vertically) */
+    .Ctrlbtn {
+        flex-direction: column;
+    }
+
+    .btnsendlink,
+    .btncancel {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Bottom text */
+    .CtrlGo {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .txtremember {
+        padding-right: 0;
+    }
+}
+</style>
+<body>
+    <!-- NavBar -->
+     <div class="CtrlNavBar">
+        <div class="Nav_logo">
+            <div class="Logo">S</div>
+            <h2 class="Name">StudentLab</h2>
+        </div>
+
+        <div class="CtrlA">
+            <a href="">Home</a>
+            <a href="">Login</a>
+        </div>
+     </div>
+     <!-- Body -->
+      <div class="Container">
+        <h1>Forgot yor password?</h1>
+        <p>Enter the email used for your StudentLab account. We'll send a reset link to that address.</p>
+
+        <label>Email address</label>
+        <input type="email" placeholder="Student@gmail.com">
+        <div class="Ctrlbtn">
+            <button class="fisrtbtn">Send Reset Link</button>
+            <button class="secondbtn">Cancel</button>
+        </div>
+        <div class="Bottom_text">
+            <p class="txtRemember">Remember your password?</p>
+            <a href="" class="GoBack">Go back to login</a>
+        </div>
+      </div>
+</body>
+</html>
